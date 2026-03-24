@@ -5,8 +5,9 @@ This project demonstrates how LRU caching works internally using HashMap and Dou
 
 ## Preview
 
-![Preview](screenshot1.png)
-![Preview](screenshot2.png)
+![Preview](./screenshot1.png)
+
+![Preview](./screenshot2.png)
 
 ## Features
 
