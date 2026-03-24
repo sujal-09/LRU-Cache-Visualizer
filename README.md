@@ -1,13 +1,21 @@
 # LRU Cache Visualizer (Java)
 
-An interactive LRU (Least Recently Used) Cache Visualizer built using Java Swing.
-This project demonstrates how LRU caching works internally using HashMap and Doubly Linked List with animated UI blocks.
+An interactive **LRU (Least Recently Used) Cache Visualizer** built using Java Swing.
+This project demonstrates how LRU caching works internally using **HashMap + Doubly Linked List** with animated colored blocks.
+
+---
 
 ## Preview
 
-![Preview](./screenshot1.png)
+### LRU Cache Interface
 
-![Preview](./screenshot2.png)
+![LRU UI](Screenshot1.png)
+
+### Cache Animation
+
+![Animation](Screenshot2.png)
+
+---
 
 ## Features
 
@@ -17,6 +25,9 @@ This project demonstrates how LRU caching works internally using HashMap and Dou
 * MRU → LRU visualization
 * Automatic eviction of least recently used item
 * Interactive GUI
+* Real-time cache updates
+
+---
 
 ## Technologies Used
 
@@ -26,21 +37,16 @@ This project demonstrates how LRU caching works internally using HashMap and Dou
 * Doubly Linked List
 * OOP
 
-## How to Run
+---
 
-Compile:
+## How It Works
 
-```
-javac LRUCacheVisualizer.java
-```
+* Most Recently Used items move to front
+* Least Recently Used items move to end
+* When capacity is full, last item is removed
+* GUI updates with animation
 
-Run:
-
-```
-java LRUCacheVisualizer
-```
-
-## Example
+Example:
 
 Capacity = 3
 
@@ -56,11 +62,41 @@ GET 1
 Cache:
 [1] [3] [2]
 
-## Time Complexity
+PUT 4
 
-GET → O(1)
-PUT → O(1)
+Cache:
+[4] [1] [3]
+
+---
+
+## How to Run
+
+Compile:
+javac LRUCacheVisualizer.java
+
+Run:
+java LRUCacheVisualizer
+
+---
+
+## Project Structure
+
+LRU-Cache-Visualizer
+│
+├── LRUCacheVisualizer.java
+├── Screenshot1.png
+├── Screenshot2.png
+└── README.md
+
+---
 
 ## Author
 
-Sujal Chouksey
+**Sujal Chouksey**
+GitHub: https://github.com/sujal-09
+
+---
+
+## License
+
+This project is open-source and available for learning purposes.
