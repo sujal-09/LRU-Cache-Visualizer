@@ -3,6 +3,11 @@
 An interactive LRU (Least Recently Used) Cache Visualizer built using Java Swing.
 This project demonstrates how LRU caching works internally using HashMap and Doubly Linked List with animated UI blocks.
 
+## Preview
+
+![Preview](screenshot1.png)
+![Preview](screenshot2.png)
+
 ## Features
 
 * O(1) GET and PUT operations
